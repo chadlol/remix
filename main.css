@@ -82,3 +82,50 @@ body {
 #gallery-items .item-desc {
     color: #666;
 }
+
+section#about-us {
+    width: 100%;
+    margin: 0 auto;
+    background: lightgrey url("images/ewu_design.jpg") center no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 5fr 2fr;
+}
+
+section#about-us #text-box {
+    width: 100%;
+    background-color: #FFFFFF;
+    opacity: 0.75;
+    grid-column: 2 / 4;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    align-items: flex-end;
+}
+
+section#about-us h2 {
+    text-transform: uppercase;
+    grid-row: 1;
+    grid-column: 2 / 6;
+    padding-top: 4%;
+}
+
+section#about-us div#content {
+    width: 100%;
+    grid-row: 2 / 6;
+    grid-column: 2 / 6;
+}
+
+section#about-us div#content p {
+    font-size: 0.8em;
+}
+
+section#about-us img {
+    width: 100%;
+    height: auto;
+    grid-row: 6;
+    grid-column: 6 / 7;
+    padding: 0 1% 1% 0;
+}
