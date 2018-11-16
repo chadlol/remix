@@ -1,1 +1,32 @@
-#header
+#header { 
+    background-image: url("./Assets/VCD247.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    height: 632px;
+    grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+}
+
+#header p { 
+    display: flex;
+    align-items: flex-start;
+    font-size: 1rem;
+    grid-column-start: 2 ;
+	grid-column-end: 5;
+	grid-row-start: 4;
+	grid-row-end: 7;
+}
+
+#header h1 { 
+    display: flex;
+    align-items: flex-end;
+    font-size: 2rem;
+    grid-column-start: 2;
+	grid-column-end: 6;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
