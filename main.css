@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 #header { 
     background-image: url("./Assets/VCD247.jpg");
     background-position: center;
@@ -5,7 +13,6 @@
     background-size: cover;
     display: grid;
     color: white;
-    font-family: 'Lato', sans-serif;
     height: 632px;
     grid-template-columns: repeat(8, 1fr);
 	grid-template-rows: repeat(10, 1fr);
@@ -29,4 +36,49 @@
 	grid-column-end: 6;
 	grid-row-start: 3;
 	grid-row-end: 4;
+}
+  
+#gallery {
+    color: white;
+    padding: 2em 1em;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 5fr 1fr;
+    background: #222;
+}
+
+#gallery aside {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    text-align: right;
+    font-size: 0.75em;
+}
+
+#gallery-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 4fr;
+}
+
+#gallery-items h1 {
+    font-size: 3em;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-bottom: 0.5em;
+}
+
+#gallery-items img {
+    width: 100%;
+}
+
+#gallery-items section {
+    margin: 0 1em 0 0;
+}
+
+#gallery-items .item-name {
+    font-size: 1.5em;
+}
+
+#gallery-items .item-desc {
+    color: #666;
 }
