@@ -9,7 +9,15 @@ body {
 nav {
     display: flex;
     background-color: #222;
-    
+    padding: 0 100px;
+}
+
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 1em 0;
+    }
 }
 
 nav .vcd {
@@ -17,15 +25,16 @@ nav .vcd {
     font-family: 'Lato', sans-serif;
     padding: 20px;
     color: white;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
 nav .links {
     display: flex;
     align-items: center;
-    margin-left: 100px;
+
+    /* margin-left: 100px; */
     width: 400px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav a {
@@ -53,7 +62,8 @@ nav a {
     grid-column-start: 2 ;
 	grid-column-end: 5;
 	grid-row-start: 4;
-	grid-row-end: 7;
+    grid-row-end: 7;
+
 }
 
 #header h1 { 
